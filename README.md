@@ -8,16 +8,17 @@ A lightweight Python tool that generates **pseudo-3D rotating views** from 2D or
 
 This project implements a custom projection algorithm without using 3D engines (like Unity or Blender), optimized for **Data Augmentation** in building classification or urban scene understanding tasks.
 
-## ✨ Key Features
+##  Key Features
 - **Pseudo-3D Projection:** Simulates 3D rotation using `cv2.getPerspectiveTransform` and trigonometric calculations.
 - **Vertical Perspective:** Applies distance-based vanishing point effects (pin-hole camera model).
 - **Dual Modes:**
-  - 💾 **Offline Generation:** Save thousands of augmented images to disk (`main.py`).
-  - 🚀 **Online Pipeline:** Generate views on-the-fly during training (`augmentor.py`).
+  -  **Offline Generation:** Save thousands of augmented images to disk (`main.py`).
+  -  **Online Pipeline:** Generate views on-the-fly during training (`augmentor.py`).
 
-## 🛠️ Installation
+##  Installation
 
 ```bash
 pip install opencv-python numpy
 # (Optional) For ML pipeline integration
+
 pip install torch torchvision
